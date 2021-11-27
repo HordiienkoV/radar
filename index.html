@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Radar BC</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+	<section class="header">
+		<div class="header-top">
+			<div class="header-top__container container">
+				<a href="#" class="header-top__logo-link">
+					<img src="img/logo.png" alt="logo" class="header-top__logo-img">
+				</a>
+				<a href="tel:+38 (097) 470-43-06" class="header-top__number-link">
+					<svg class="icon">
+						<use xlink:href="#number-icon"></use>
+					</svg>
+					<span>+38 (097) 470-43-06</span>
+				</a>
+				<nav class="header-top__nav">
+					<ul class="header-top__list">
+						<li class="header-top__item">
+							<a href="#" class="header-top__item-link header-top__item-link--active">
+								<span>Услуги</span>
+								<svg class="icon">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header-top__item">
+							<a href="#" class="header-top__item-link">
+								<span>Проекты</span>
+							</a>
+						</li>
+						<li class="header-top__item">
+							<a href="#" class="header-top__item-link">
+								<span>Оборудование</span>
+							</a>
+						</li>
+						<li class="header-top__item">
+							<a href="#" class="header-top__item-link">
+								<span>Блог</span>
+							</a>
+						</li>
+						<li class="header-top__item">
+							<a href="#" class="header-top__item-link">
+								<span>Контакты</span>
+							</a>
+						</li>
+					</ul>
+					<div class="header-top__lang-wrap">
+						<div class="header-top__lang">
+							<a href="#" class="header-top__lang-link">Рус</a>
+							<svg class="icon">
+								<use xlink:href="#arrow"></use>
+							</svg>
+						</div>
+						<div class="header-top__lang header-top__lang--hidden">
+							<a href="#" class="header-top__lang-link">Укр</a>
+						</div>
+					</div>
+				</nav>
+				<div class="header-top__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__container container">
+				<div class="header-bottom__text">Пожарная сигнализация</div>
+				<nav class="header-bottom__nav">
+					<ul class="header-bottom__list">
+						<li class="header-bottom__item">
+							<a href="#" class="header-bottom__item-link header-bottom__item-link--active">
+								<span>Об услуге</span>
+							</a>
+						</li>
+						<li class="header-bottom__item">
+							<a href="#" class="header-bottom__item-link">
+								<span>Приимущества</span>
+							</a>
+						</li>
+						<li class="header-bottom__item">
+							<a href="#" class="header-bottom__item-link">
+								<span>Выполненые проекты</span>
+							</a>
+						</li>
+						<li class="header-bottom__item">
+							<a href="#" class="header-bottom__item-link">
+								<span>Отзывы</span>
+							</a>
+						</li>
+						<li class="header-bottom__item">
+							<a href="#" class="header-bottom__item-link">
+								<span>Вопросы и ответы</span>
+							</a>
+						</li>
+					</ul>
+					<button class="button-transparent">Заказать услугу</button>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<main class="main">
+		<section class="banner">
+			<div class="banner__container container">
+				<div class="banner__content">
+					<h1 class="banner__title">Пожарная сигнализация: установка и монтаж</h1>
+					<div class="banner__text">
+						Пожарная сигнализация позволяет обнаружить место возгорания и предупредить об этом. Системы
+						оповещения позволяют своевременно предупредить об опасности и провести эвакуацию.
+					</div>
+					<div class="banner__price-wrap">
+						<div class="banner__price">
+							<div class="banner__price-title">От 10 699 <span>грн.<sup>2</sup></span></div>
+							<div class="banner__price-subtitle">+1 месяц абон.платы бесплатно*</div>
+						</div>
+						<div class="banner__price-message">
+							<span> Дорожим клиентами, а не ценами. Нашли дешевле? Снизим цену специально для вас</span>
+						</div>
+					</div>
+					<div class="banner__buttons">
+						<button class="button-filled">Заказать звонок</button>
+						<a href="#" class="banner__buttons-link">Посмотреть проекты</a>
+					</div>
+				</div>
+				<img src="img/banner-img.png" alt="banner-img" class="banner__img">
+			</div>
+		</section>
+		<section class="info">
+			<div class="container">
+				<div class="info__title title">Монтаж пожарной сигнализации под ключ</div>
+				<div class="info__subtitle subtitle ">Это комплекс мероприятий для создания системы оповещения</div>
+				<div class="info-swiper swiper">
+					<div class="info-swiper-wrapper swiper-wrapper">
+						<div class="swiper-slide" id="info-first">
+							<div class="info__item-content">
+								<div class="info__item-title">Принцип работы пожарной сигнализации</div>
+								<div class="info__item-text">
+									Cистема срабатывания при достижении определенного порога значений. Основана работа
+									такой
+									системы на срабатывании при достижении определенного значения сопротивления в
+									шлейфе.
+									При этом датчики находятся в 2-х состояниях: «норма» и «пожар». При возникновении
+									пожара, меняется внутреннее сопротивление датчика, что ведет к включению активности
+									работу по шлейфу, в котором зафиксировано измененное состояние.
+								</div>
+							</div>
+							<img src="img/info-img.png" alt="info" class="info__item-img">
+						</div>
+						<div class="swiper-slide" id="info-second">
+							<div class="info__item-title">Особенности работы</div>
+							<div class="info__item-text">
+								Данные системы автоматически проверяют, в каком состоянии находятся датчики. Причем,
+								проверки проводятся периодически, согласно заранее определенному алгоритму. В таких
+								случаях более точно можно определить место неисправного датчика.
+							</div>
+						</div>
+						<div class="swiper-slide" id="info-third">
+							<div class="info__item-title">Установка и монтаж</div>
+							<div class="info__item-text">
+								Cегодня наиболее совершенная система, обладающая набором функций, которые имеют
+								адресно-пороговые системы. Отличия в методах обработки информации датчиков, а также
+								в
+								том, что переход в другой режим происходит по решению контрольной панели, а не
+								непосредственно извещателя.
+							</div>
+						</div>
+					</div>
+					<div class="info-pagination swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="protect">
+			<div class="container">
+				<div class="protect__text">
+					<div class="protect__title title">
+						Защищаем большие объекты <br>
+						со сложной внутренней организацией
+					</div>
+					<div class="protect__subtitle subtitle">
+						Бизнес-центры, заводы и многоэтажные виллы с хозяйственными постройками — Radar BC обеспечит
+						безопасность самых сложных объектов. Обеспечим дальность связи 2000 метров, а радиосеть системы
+						может покрывать до 35 км2. Radar BC может наладить работу охраны и подключить 200 пользователей,
+						чтобы разделить охрану объекта на зоны и четко разграничить доступ сотрудников.
+					</div>
+				</div>
+				<div class="protect-swiper swiper">
+					<div class="protect__grid swiper-wrapper">
+						<div class="protect__item swiper-slide">
+							<img src="img/protect-img1.png" alt="protect" class="protect__item-img">
+							<div class="protect__item-text">
+								Фиксирует появление дыма, резкие скачки температуры и опасный уровень CO
+							</div>
+						</div>
+						<div class="protect__item  swiper-slide">
+							<img src="img/protect-img2.png" alt="protect" class="protect__item-img">
+							<div class="protect__item-text">
+								Система сможет работать автономно от,
+								оповещая об опасности с помощью встроенной сирены
+							</div>
+						</div>
+						<div class="protect__item  swiper-slide">
+							<img src="img/protect-img3.png" alt="protect" class="protect__item-img">
+							<div class="protect__item-text">
+								Система самостоятельно тестирует камеру дыма и вовремя сообщает о необходимости очистки
+								от
+								пыли
+							</div>
+						</div>
+					</div>
+					<div class="protect-pagination swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="realized">
+			<div class="container">
+				<div class="realized__title title">Реализованые обьекты</div>
+			</div>
+			<div class="realized-swiper__container container">
+				<div class="realized-swiper swiper">
+					<div class="realized-swiper-wrapper swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/realized-slide.png" alt="slide">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/realized-slide.png" alt="slide">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/realized-slide.png" alt="slide">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/realized-slide.png" alt="slide">
+						</div>
+					</div>
+					<div class="realized-arrow swiper-button-prev"></div>
+					<div class="realized-arrow swiper-button-next"></div>
+					<div class="realized-pagination swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="about__title title">Что о нас говорят</div>
+				<div class="about-swiper swiper">
+					<div class="about-swiper-wrapper swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="about__slide-title-wrap">
+								<div class="about__slide-title">
+									<div>Степан Васильченко</div>
+									<div>Директор предприятия ООО “Магрок”</div>
+								</div>
+								<img src="img/slide-img.png" alt="slide-img">
+							</div>
+							<div class="about__slide-text">
+								<div>
+									Заказывали монтаж пожарных систем (АПС и СОУЭ). Работа была достаточно быстро
+									выполнена. Я даже такого не ожидал. Пожарная система обошлась нам совсем дешево,
+									думали, что будет стоить гораздо дороже. Удалось даже опробовать, могу сказать, что
+									качество на достаточно высоком уровне.
+								</div>
+								<div>За такую цену точно лучше не найти.</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="about__slide-title">
+								<div>Олеся Кацуренвич</div>
+								<div>Управляющий торговым центром </div>
+							</div>
+							<div class="about__slide-text">
+								<div>
+									Заказывали монтаж пожарных систем (АПС и СОУЭ). Работа была достаточно быстро
+									выполнена. Я даже такого не ожидал. Пожарная система обошлась нам совсем дешево,
+									думали, что будет стоить гораздо дороже. Удалось даже опробовать, могу сказать, что
+									качество на достаточно высоком уровне.
+								</div>
+								<div>За такую цену точно лучше не найти.</div>
+							</div>
+							<button class="button-rounded">
+								<svg class="icon">
+									<use xlink:href="#play-icon"></use>
+								</svg>
+								<div>Посмотреть видео</div>
+							</button>
+						</div>
+						<div class="swiper-slide">
+							<div class="about__slide-title-wrap">
+								<div class="about__slide-title">
+									<div>Степан Васильченко</div>
+									<div>Директор предприятия ООО “Магрок”</div>
+								</div>
+								<img src="img/slide-img.png" alt="slide-img">
+							</div>
+							<div class="about__slide-text">
+								<div>
+									Заказывали монтаж пожарных систем (АПС и СОУЭ). Работа была достаточно быстро
+									выполнена. Я даже такого не ожидал. Пожарная система обошлась нам совсем дешево,
+									думали, что будет стоить гораздо дороже. Удалось даже опробовать, могу сказать, что
+									качество на достаточно высоком уровне.
+								</div>
+								<div>За такую цену точно лучше не найти.</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="about__slide-title">
+								<div>Олеся Кацуренвич</div>
+								<div>Управляющий торговым центром </div>
+							</div>
+							<div class="about__slide-text">
+								<div>
+									Заказывали монтаж пожарных систем (АПС и СОУЭ). Работа была достаточно быстро
+									выполнена. Я даже такого не ожидал. Пожарная система обошлась нам совсем дешево,
+									думали, что будет стоить гораздо дороже. Удалось даже опробовать, могу сказать, что
+									качество на достаточно высоком уровне.
+								</div>
+								<div>За такую цену точно лучше не найти.</div>
+							</div>
+							<button class="button-rounded">
+								<svg class="icon">
+									<use xlink:href="#play-icon"></use>
+								</svg>
+								<div>Посмотреть видео</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="about-pagination swiper-pagination"></div>
+				<button class="button-transparent">Оставить отзыв</button>
+			</div>
+		</section>
+		<section class="question">
+			<div class="container">
+				<div class="question__title title">Часто задаваемые вопросы</div>
+				<div class="question__item">
+					<div class="question__item-title">
+						<span>Как производиться монтаж автоматической пожарной сигнализации?</span>
+						<button class="question__button">
+							<span class="first-dash"></span>
+							<span class="second-dash"></span>
+						</button>
+					</div>
+					<div class="question__item-text">
+						Радиоканальные выбираются тогда, когда технически невозможна или экономически не оправдана
+						прокладка кабелей. Подобные системы требуют больше времени на обслуживание, что ведет к его
+						удорожанию.
+					</div>
+				</div>
+				<div class="question__item">
+					<div class="question__item-title">
+						<span>Какая стоимость выполняемых работ ?</span>
+						<button class="question__button">
+							<span class="first-dash"></span>
+							<span class="second-dash"></span>
+						</button>
+					</div>
+					<div class="question__item-text">
+						Радиоканальные выбираются тогда, когда технически невозможна или экономически не оправдана
+						прокладка кабелей. Подобные системы требуют больше времени на обслуживание, что ведет к его
+						удорожанию.
+					</div>
+				</div>
+				<div class="question__item">
+					<div class="question__item-title">
+						<span>Сколько потребуется времени на монтаж ситемы ?</span>
+						<button class="question__button">
+							<span class="first-dash"></span>
+							<span class="second-dash"></span>
+						</button>
+					</div>
+					<div class="question__item-text">
+						Радиоканальные выбираются тогда, когда технически невозможна или экономически не оправдана
+						прокладка кабелей. Подобные системы требуют больше времени на обслуживание, что ведет к его
+						удорожанию.
+					</div>
+				</div>
+				<div class="question__item">
+					<div class="question__item-title">
+						<span>Какие вы даете гарантии ?</span>
+						<button class="question__button">
+							<span class="first-dash"></span>
+							<span class="second-dash"></span>
+						</button>
+					</div>
+					<div class="question__item-text">
+						Радиоканальные выбираются тогда, когда технически невозможна или экономически не оправдана
+						прокладка кабелей. Подобные системы требуют больше времени на обслуживание, что ведет к его
+						удорожанию.
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation__title title">Получить бесплатную консультацию</div>
+				<ul class="consultation__steps-list">
+					<li class="consultation__step">
+						<div>1</div>
+						<div>Заполните онлайн-заявку<span class="consultation__step-text--hidden"> — вам не нужно
+								посещать офис</span></div>
+					</li>
+					<li class="consultation__step">
+						<div>2</div>
+						<div>Наш менеджер свяжется с вами<span class="consultation__step-text--hidden">сразу после
+								заполнения заявки</span></div>
+					</li>
+					<li class="consultation__step">
+						<div>3</div>
+						<div>Наши специалисты установят все нужное оборудование</div>
+					</li>
+				</ul>
+			</div>
+			<form class="consultation__form">
+				<div class="consultation__form-container container">
+					<div class="consultation__form-title">Бесплатная консультация</div>
+					<div class="consultation__select-wrap">
+						<div class="consultation__select">
+							<div class="consultation__select-placeholder">
+								Какая услуга вам нужна ?
+							</div>
+							<div class="consultation__option-wrap">
+								<div class="consultation__option">Мониторинг помещения</div>
+								<div class="consultation__option">Монтаж сигнализации</div>
+								<div class="consultation__option">Консультация</div>
+							</div>
+						</div>
+						<svg class="icon">
+							<use xlink:href="#arrow"></use>
+						</svg>
+					</div>
+					<div class="consultation__form-title">Контактная информация</div>
+					<input type="text" placeholder="Фамилия, имя и отчество*">
+					<input type="number" placeholder="Телефон*">
+					<input type="text" placeholder="Почта">
+					<textarea placeholder="Комментарий"></textarea>
+					<div class="consultation__form-wrap">
+						<label class="consultation__form-checkbox">
+							<input type="checkbox">
+							<span class="checkbox__title">Я принимаю <a href="#">условия передачи информации</a></span>
+						</label>
+						<button class="button-filled">Узнать стоимость</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		<section class="interesting">
+			<div class="container">
+				<div class="interesting__title title">Вам может быть интерестно</div>
+				<div class="interesting__item">
+					<a href="#" class="interesting__item-link">Аудит пожарной безопасности</a>
+					<a href="#" class="interesting__item-link">Системы пожаротушения</a>
+					<a href="#" class="interesting__item-link">Системы оповещения о пожаре</a>
+					<a href="#" class="interesting__item-link">Системы дымоудаления</a>
+					<a href="#" class="interesting__item-link">Пультовое наблюдение за пожарной сигнализацией</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top-item">
+					<div class="footer-top-item-title" id="footer-top-btn">Покупателям</div>
+					<ul class="footer-top__list">
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Оборудование</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">О нас</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-item">
+					<div class="footer-top-item-title" id="footer-top-btn">Наши услуги</div>
+					<ul class="footer-top__list">
+						<li><a href="#">Огнезащитная Обработка</a></li>
+						<li><a href="#">Молниезащита</a></li>
+						<li><a href="#">Пожарные Системы</a></li>
+						<li><a href="#">Охранные Системы</a></li>
+						<li><a href="#">Водопровод, Канализация</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-item">
+					<div class="footer-top-item-title">Новостная подписка</div>
+					<form class="footer-top__form">
+						<input type="text" placeholder="Укажите вашу почту">
+						<button class="button-filled">Отправить</button>
+					</form>
+					<div class="footer-top-item-title">Контакты</div>
+					<div class="footer-top__contact-wrap">
+						<div class="footer-top__contact-item">
+							<a href="tel:+38 (097) 470-43-06">+38 (097) 470-43-06</a>
+							<div class="footer-top__contact-subtitle">Консультация специалиста</div>
+						</div>
+						<div class="footer-top__contact-item">
+							<a href="tel:+38 (096) 733-68-50">+38 (096) 733-68-50</a>
+							<div class="footer-top__contact-subtitle">По всем вопросам</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<img src="img/footer-logo.png" class="footer-bottom__logo">
+				<div class="footer-bottom__items">
+					<div class="footer-bottom__copyright">© «Радар ВС» 2010 - 2020</div>
+					<div class="footer-bottom__link-wrap">
+						<a href="#" class="footer-bottom__link">Политика приватности</a>
+						<a href="#" class="footer-bottom__link">Условия использования</a>
+					</div>
+					<ul class="footer-bottom__social">
+						<li><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+						<li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+						<li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<svg width="0" height="0" style="display: none;">
+		<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="number-icon">
+			<path
+				d="M13.75 10.575V12.45C13.7507 12.6241 13.715 12.7964 13.6453 12.9558C13.5756 13.1153 13.4733 13.2585 13.345 13.3762C13.2168 13.4938 13.0653 13.5834 12.9005 13.6392C12.7356 13.695 12.5608 13.7157 12.3875 13.7C10.4643 13.491 8.61686 12.8338 6.99374 11.7812C5.48363 10.8217 4.20332 9.54136 3.24374 8.03125C2.18748 6.40075 1.53014 4.54437 1.32499 2.6125C1.30937 2.43967 1.32991 2.26547 1.3853 2.10101C1.44069 1.93655 1.52972 1.78543 1.64672 1.65726C1.76371 1.5291 1.90612 1.42669 2.06486 1.35658C2.2236 1.28646 2.3952 1.25016 2.56874 1.25H4.44374C4.74705 1.24701 5.04111 1.35442 5.27109 1.55221C5.50107 1.74999 5.65129 2.02465 5.69374 2.325C5.77288 2.92504 5.91964 3.5142 6.13124 4.08125C6.21533 4.30495 6.23353 4.54807 6.18368 4.7818C6.13383 5.01553 6.01803 5.23007 5.84999 5.4L5.05624 6.19375C5.94596 7.75846 7.24152 9.05403 8.80624 9.94375L9.59999 9.15C9.76992 8.98196 9.98446 8.86615 10.2182 8.81631C10.4519 8.76646 10.695 8.78466 10.9187 8.86875C11.4858 9.08034 12.0749 9.22711 12.675 9.30625C12.9786 9.34908 13.2559 9.502 13.4541 9.73593C13.6523 9.96986 13.7576 10.2685 13.75 10.575Z"
+				stroke="#017DFF" stroke-linecap="round" stroke-linejoin="round"></path>
+		</symbol>
+		<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="arrow">
+			<path d="M1 1L3.5 3L6 1"></path>
+		</symbol>
+		<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="play-icon">
+			<path
+				d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+				stroke="#017DFF" stroke-linecap="round" stroke-linejoin="round"></path>
+			<path d="M7.5 6L12 9L7.5 12V6Z" stroke="#017DFF" stroke-linecap="round" stroke-linejoin="round">
+			</path>
+		</symbol>
+	</svg>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+
+
+
+</html>
